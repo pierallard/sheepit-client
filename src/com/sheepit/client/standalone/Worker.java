@@ -180,7 +180,7 @@ public class Worker {
 			}
 		}
 		
-		if (nb_cores < -1) {
+		if ((nb_cores < -1) || (nb_cores == 0)) {
 			System.err.println("Error: use-number-core should be a greater than zero");
 			return;
 		}
